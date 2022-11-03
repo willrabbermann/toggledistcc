@@ -95,8 +95,9 @@ char * get_makeconfig()
         makeconfig[i] = c;
     }
     makeconfig[size+1] = '\0';
+	fclose(fp);
 	return makeconfig;
-    fclose(fp);
+ 
 }
 
 void write_makeconfig(char *makeconfig)
@@ -125,6 +126,7 @@ int main()
                      awk -F \": \" \'{print $NF}\'";
         char *buf = pipe_cmd(cmd, 50, 1);
         LOCAL_TJ = atoi(buf);
+	    free(buf);
 	}	
     
     char *makeconfig = get_makeconfig();
