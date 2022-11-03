@@ -2,7 +2,7 @@
 ```toggledistcc``` does the following:
 
 1. Set ```MAKEOPTS=``` automatically to toggle distcc opts. 
-   Sets ```-j#DISTCC_TJ -l#LOCAL_TJ``` but no other makeopt setting will be preserved. (TODO)
+   Sets ```-j#DISTCC_TJ -l#LOCAL_TJ``` but no other makeopt setting will be preserved.
 
 2. Set ```FEATURES=``` and preserve previous feature entries, as well as performing 
    space limiting (one space per word, none on the beginning or ends).
