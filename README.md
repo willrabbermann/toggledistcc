@@ -1,7 +1,8 @@
-toggledistcc is compiled with a constant, DISTCC_TJ, which represents the max number threads
-when using distcc (remote + local); It is recommended to update this to match your setup.
-When LOCAL_TJ is == 0, a system command is run to find the thread count of your local
-processor. Therefore it is not necessary to update LOCAL_TJ.
+Necessary user configuations are set in 'config.h' before compiling.
+
+toggledistcc is compiled with a constant ```DISTCC_TJ```, which represents the max number of threads when using distcc (remote + local); It is recommended to update this to match your setup.
+
+When LOCAL_TJ is == 0, a system command is run to find the thread count of your local processor. Therefore it is not necessary to update ```LOCAL_TJ```.
 
 I made this program so I could easily turn distcc off when I start getting ICE (internal compiler errors).
 Some things compile fine with distcc opts but its useful being able to turn them off when errors arise.
