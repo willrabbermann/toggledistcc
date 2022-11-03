@@ -178,12 +178,12 @@ int main()
     if (distcc)
     {
         sprintf(second, "-j%ld -l%ld", j, l);
-        printf("Enabling distcc MAKEOPTS and FEATURES...\n");
         char *fourth_cpy = fourth;
         if (strlen(fourth) < 1)
             sprintf(fourth, "distcc");
         else
             sprintf(fourth, "%s distcc", fourth_cpy);
+	printf("Enabling distcc MAKEOPTS and FEATURES...\n");
     }
     else
     {
