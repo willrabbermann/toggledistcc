@@ -1,5 +1,5 @@
 # toggledistcc #
-```toggledistcc``` does the following:
+```toggledistcc``` preserves your entire make.conf and does the following:
 
 1. Set ```MAKEOPTS=``` automatically to toggle distcc opts. 
    Sets ```-j#DISTCC_TJ -l#LOCAL_TJ``` but no other makeopt setting will be preserved.
