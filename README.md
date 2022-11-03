@@ -17,7 +17,7 @@ toggledistcc is compiled with a constant ```DISTCC_TJ```, which represents the m
 A system command is run to find the thread count of your local processor. Therefore it is not necessary to update ```LOCAL_TJ```.
 
 # why? #
-I made this program so I could easily turn distcc off when I start getting ICE (internal compiler errors).
+I made toggledistcc so I could easily turn distcc off when I start getting ICE (internal compiler errors).
 Some things compile fine with distcc opts but its useful being able to turn them off when errors arise.
 
 
