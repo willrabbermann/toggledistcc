@@ -164,7 +164,6 @@ int main()
         j = LOCAL_TJ;
     }
 
-    
     int makeopts_index = strstr_index(makeconfig, "MAKEOPTS=\"") + strlen("MAKEOPTS=\"");
 	int features_index = strstr_index(makeconfig, "FEATURES=\"") + strlen("FEATURES=\"");
 
@@ -175,6 +174,7 @@ int main()
                  (features_index - (makeopts_index + makeopts_len)));
     char *fourth = strsplit(makeconfig, features_index, features_len);
     char *fifth = strsplit(makeconfig, (features_index + features_len), -1);
+    
     if (distcc)
     {
         sprintf(second, "-j%ld -l%ld", j, l);
