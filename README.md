@@ -8,10 +8,10 @@ I made this program so I could easily turn distcc off when I start getting ICE (
 Some things compile fine with distcc opts but its useful being able to turn them off when errors arise.
 
 This program does the following:
-1. Set your MAKEOPTS="" automatically to toggle distcc opts. 
-   Currently sets "-j#DISTCC_TJ -l#LOCAL_TJ" but no other settings will be saved. (TODO)
+1. Set ```MAKEOPTS=``` automatically to toggle distcc opts. 
+   Currently sets "-j#DISTCC_TJ -l#LOCAL_TJ" but no other makeopt setting will be saved. (TODO)
 
-2. Set FEATURES="" and preserves previous feature entries, as well as performing 
+2. Set ```FEATURES=``` and preserves previous feature entries, as well as performing 
    space limiting (one space per word, none on the beginning or ends).
 
 3. Start/stop distcc service in an OpenRC init environment.
