@@ -7,7 +7,7 @@
 2. Set ```FEATURES=``` and preserve previous feature entries, as well as performing 
    space limiting (one space per word, none on the beginning or ends).
 
-3. Start/stop distcc service in an OpenRC init environment.
+3. Start/stop distcc service in OpenRC.
 
 ## config.h ##
 User configuations are set in ```config.h``` before compiling.
