@@ -113,7 +113,6 @@ void write_makeconfig(char *makeconfig)
 
 int main()
 {
-	
     if (geteuid() != 0)
     {
         printf("Run as root to modify /etc/portage/make.conf\n");
