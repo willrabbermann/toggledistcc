@@ -1,11 +1,14 @@
 # toggledistcc #
 ```toggledistcc``` preserves your entire make.conf and does the following:
 
-1. Set ```MAKEOPTS=``` automatically to toggle distcc opts. 
-   Sets ```-j#DISTCC_TJ -l#LOCAL_TJ``` but no other makeopt setting will be preserved.
+1. Set ```MAKEOPTS=``` automatically to toggle distcc opts. No other makeopt setting will be preserved.
+
+Distcc on: ```"-j#DISTCC_TJ -l#LOCAL_TJ"``` Distcc off: ```"-j#LOCAL_TJ"```
 
 2. Set ```FEATURES=``` and preserve previous feature entries, as well as performing 
    space limiting (one space per word, none on the beginning or ends).
+
+Distcc on: ```"other_feature distcc"``` Distcc off: ```"other_feature"```
 
 3. Start/stop distcc service in OpenRC.
 
