@@ -1,4 +1,4 @@
-Necessary user configuations are set in 'config.h' before compiling.
+Necessary user configuations are set in ```config.h``` before compiling.
 
 toggledistcc is compiled with a constant ```DISTCC_TJ```, which represents the max number of threads when using distcc (remote + local); It is recommended to update this to match your setup.
 
