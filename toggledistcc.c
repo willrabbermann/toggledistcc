@@ -5,7 +5,6 @@
 #include "strutils.h"
 #include "config.h"
 
-size_t LOCAL_TJ = 0;
 size_t j = 0, l = 0;
 
 char *pipe_cmd(char cmd[], size_t size, int rm_newlines)
