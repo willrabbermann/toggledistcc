@@ -1,10 +1,9 @@
 #ifndef STRUTILS_H
 #define STRUTILS_H
-#endif
 
 char *strsplit(char *str,int offset, int length);
 int strstr_index(char *str1, char *str2);
-int strcmp_array(char *a, const char *b[], int n );
+int strcmp_array(char *a, const char *b[], int n);
 char *str_rm(char *str1, char *str2, int limit_spaces);
 
 char *strsplit(char *str,int offset, int length)
@@ -171,3 +170,4 @@ char *str_rm(char *str1, char *str2, int limit_spaces)
         return newstr;
     }
 }
+#endif
